@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizora - Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="app">
+        <header class="header">
+            <a href="#" class="logo">Q<span>uizora.</span></a>
+            <span class="tagline">THINK. PLAY. LEARN.</span>
+        </header>
+
+        <!-- Welcome Screen -->
+        <section id="welcome-screen" class="screen welcome">
+            <p class="eyebrow">✦ YOUR DAILY BRAIN BOOST</p>
+
+            <h1>Make every<br>answer <span>count.</span></h1>
+
+            <p class="description">
+                Challenge yourself with a quick quiz.
+                Test what you know, learn something new,
+                and beat your best score.
+            </p>
+
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">✦</span>
+                    <div>
+                        <strong>5 Questions</strong>
+                        <small>Quick challenge</small>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="feature-icon">◷</span>
+                    <div>
+                        <strong>Timed Mode</strong>
+                        <small>15 seconds each</small>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="feature-icon">↗</span>
+                    <div>
+                        <strong>Instant Results</strong>
+                        <small>See your score</small>
+                    </div>
+                </div>
+            </div>
+
+            <button id="start-btn" class="primary-btn">
+                Start the Quiz <span>→</span>
+            </button>
+
+            <p class="note">NO PRESSURE. JUST A LITTLE BRAIN POWER.</p>
+        </section>
+
+        <!-- Quiz Screen -->
+        <section id="quiz-screen" class="screen hidden">
+            <div class="quiz-heading">
+                <div>
+                    <p class="eyebrow">✦ KNOWLEDGE CHECK</p>
+                    <h2>Let's do this<span>.</span></h2>
+                </div>
+
+                <div class="counter">
+                    <span id="current-number">01</span> /
+                    <span id="total-number">05</span>
+                </div>
+            </div>
+
+            <div class="progress-track">
+                <div id="progress-bar"></div>
+            </div>
+
+            <div class="question-info">
+                <span id="category-label">GENERAL KNOWLEDGE</span>
+                <span class="timer">◷ <span id="timer-number">15</span>s</span>
+            </div>
+
+            <h3 id="question-text">Question goes here?</h3>
+
+            <div id="answers" class="answers"></div>
+
+            <p id="feedback" class="feedback" aria-live="polite"></p>
+
+            <div class="quiz-footer">
+                <span id="answered-label">CHOOSE YOUR ANSWER</span>
+                <button id="next-btn" class="primary-btn" disabled>
+                    Next Question →
+                </button>
+            </div>
+        </section>
+
+        <!-- Results Screen -->
+        <section id="result-screen" class="screen hidden">
+            <div class="result-icon">✦</div>
+
+            <p class="eyebrow centered">✦ QUIZ COMPLETE ✦</p>
+
+            <h2 id="result-title">Nicely done!</h2>
+
+            <p id="result-message" class="description centered">
+                Here is how you performed.
+            </p>
+
+            <div class="score-card">
+                <div class="score-ring" id="score-ring">
+                    <div>
+                        <strong id="score-percent">80%</strong>
+                        <small>YOUR SCORE</small>
+                    </div>
+                </div>
+
+                <div class="score-details">
+                    <div>
+                        <span>Correct Answers</span>
+                        <strong id="correct-score">4 / 5</strong>
+                    </div>
+
+                    <div>
+                        <span>Points Earned</span>
+                        <strong id="points-score">80 pts</strong>
+                    </div>
+                </div>
+            </div>
+
+            <button id="restart-btn" class="primary-btn">
+                Play Again ↻
+            </button>
+
+            <p class="note">EVERY QUIZ IS A CHANCE TO GET BETTER.</p>
+        </section>
+
+        <footer class="footer">
+            <span>© 2026 QUIZORA</span>
+            <span>BUILT FOR CURIOUS MINDS ✦</span>
+        </footer>
+    </div>
+
+</body>
+</html>
